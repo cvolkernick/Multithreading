@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.multithreading.MainActivity">
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Start Thread"
+        android:onClick="onStartThread"
+        android:id="@+id/btnThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Start Runnable"
+        android:onClick="onStartRunnable"
+        android:id="@+id/btnRunnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="onStartAsyncTask"
+        android:text="Start AsyncTask"
+        android:id="@+id/btnAsyncTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnEventThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start EventThread"
+        android:onClick="onStartEventThread" />
+</LinearLayout>
